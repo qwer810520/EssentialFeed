@@ -11,6 +11,7 @@
 		3908C16C251B8553006503FB /* EssentialFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908C16B251B8553006503FB /* EssentialFeedTests.swift */; };
 		3908C16E251B8553006503FB /* EssentialFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = 3908C160251B8553006503FB /* EssentialFeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3908C178251B859B006503FB /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908C177251B859B006503FB /* FeedItem.swift */; };
+		3908C17A251B8627006503FB /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908C179251B8627006503FB /* FeedLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		3908C16B251B8553006503FB /* EssentialFeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialFeedTests.swift; sourceTree = "<group>"; };
 		3908C16D251B8553006503FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3908C177251B859B006503FB /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		3908C179251B8627006503FB /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				3908C160251B8553006503FB /* EssentialFeed.h */,
 				3908C161251B8553006503FB /* Info.plist */,
 				3908C177251B859B006503FB /* FeedItem.swift */,
+				3908C179251B8627006503FB /* FeedLoader.swift */,
 			);
 			path = EssentialFeed;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3908C17A251B8627006503FB /* FeedLoader.swift in Sources */,
 				3908C178251B859B006503FB /* FeedItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
