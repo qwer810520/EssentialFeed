@@ -8,7 +8,7 @@
 
 import Foundation
 
-public typealias HTTPClientResult = Result<(Data, HTTPURLResponse), Error>
+public typealias HTTPClientResult = Result<(data: Data, response: HTTPURLResponse), Error>
 
 public protocol HTTPClient {
   func get(from url: URL, complectilon: @escaping (HTTPClientResult) -> Void)
@@ -35,8 +35,12 @@ public final class RemoteFeedLoader {
   public func load(complection: @escaping (Result) -> Void) {
     client.get(from: url) { result in
       switch result {
-        case .success:
-          complection(.failure(.invalidData))
+        case .success(let res):
+          if let _ = try? JSONSerialization.jsonObject(with: res.data) {
+            complection(.success([]))
+          } else {
+            complection(.failure(.invalidData))
+          }
         case .failure:
           complection(.failure(.connectivity))
       }
