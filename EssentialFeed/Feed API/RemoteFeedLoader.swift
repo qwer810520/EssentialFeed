@@ -6,7 +6,7 @@
 //  Copyright © 2020 Min. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public typealias HTTPClientResult = Result<(data: Data, response: HTTPURLResponse), Error>
 
@@ -36,8 +36,8 @@ public final class RemoteFeedLoader {
     client.get(from: url) { result in
       switch result {
         case .success(let res):
-          if let _ = try? JSONSerialization.jsonObject(with: res.data) {
-            complection(.success([]))
+          if let root = try? JSONDecoder().decode(Root.self, from: res.data) {
+            complection(.success(root.items))
           } else {
             complection(.failure(.invalidData))
           }
@@ -46,5 +46,9 @@ public final class RemoteFeedLoader {
       }
     }
   }
+}
+
+private struct Root: Decodable {
+  let items: [FeedItem]
 }
 
