@@ -8,7 +8,7 @@
 
 import UIKit
 
-public final class RemoteFeedLoader {
+public final class RemoteFeedLoader: FeedLoader {
   private let url: URL
   private let client: HTTPClient
 
@@ -23,14 +23,14 @@ public final class RemoteFeedLoader {
     self.client = client
   }
 
-  public func load(complection: @escaping (Result) -> Void) {
+  public func load(completion: @escaping (Result) -> Void) {
     client.get(from: url) { [weak self] result in
       guard self != nil else { return }
       switch result {
         case .success(let result):
-          complection(FeedItemsMapper.map(result.data, from: result.response))
+          completion(FeedItemsMapper.map(result.data, from: result.response))
         case .failure:
-          complection(.failure(.connectivity))
+          completion(.failure(.connectivity))
       }
     }
   }
