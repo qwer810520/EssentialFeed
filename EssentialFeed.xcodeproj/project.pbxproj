@@ -16,6 +16,7 @@
 		39464064255C07680017F3C1 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39464063255C07680017F3C1 /* HTTPClient.swift */; };
 		39464068255C08460017F3C1 /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39464067255C08460017F3C1 /* FeedItemsMapper.swift */; };
 		3954EC5C253C71DA005389EA /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3954EC5B253C71DA005389EA /* RemoteFeedLoaderTests.swift */; };
+		39DD170025654BE600948C82 /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DD16FF25654BE600948C82 /* URLSessionHTTPClientTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		39464063255C07680017F3C1 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		39464067255C08460017F3C1 /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
 		3954EC5B253C71DA005389EA /* RemoteFeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoaderTests.swift; sourceTree = "<group>"; };
+		39DD16FF25654BE600948C82 /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				3954EC5B253C71DA005389EA /* RemoteFeedLoaderTests.swift */,
+				39DD16FF25654BE600948C82 /* URLSessionHTTPClientTests.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 			files = (
 				3954EC5C253C71DA005389EA /* RemoteFeedLoaderTests.swift in Sources */,
 				3908C16C251B8553006503FB /* EssentialFeedTests.swift in Sources */,
+				39DD170025654BE600948C82 /* URLSessionHTTPClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
