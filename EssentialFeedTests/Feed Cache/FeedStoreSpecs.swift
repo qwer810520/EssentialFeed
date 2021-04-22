@@ -9,9 +9,9 @@
 import Foundation
 
 protocol FeedStoreSpecs {
-  func test_retrieve_deliversEmptyOnEnpayCache()
+  func test_retrieve_deliversEmptyOnEnptyCache()
   func test_retrieve_hasNoSideEffectsOnEmptyCache()
-  func test_retrieve_deliversFoundValuesInNonEmpryCache()
+  func test_retrieve_deliversFoundValuesOnNonEmptyCache()
   func test_retrieve_hasNoSideEffectsOnNonEmptyCache()
 
   func test_insert_deliversNoErrorInEmptyCache()
