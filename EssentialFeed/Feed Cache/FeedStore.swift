@@ -21,7 +21,7 @@ public protocol FeedStore {
 
   /// The completion handler can be invoked in any thread.
   /// Clients are responseible to dispatch to appropriate threads, if needed.
-  func deletecachedFeed(completion: @escaping DeletionCompletion)
+  func retrieve(completion: @escaping RetrievalCompletion)
 
   /// The completion handler can be invoked in any thread.
   /// Clients are responseible to dispatch to appropriate threads, if needed.
@@ -29,5 +29,5 @@ public protocol FeedStore {
 
   /// The completion handler can be invoked in any thread.
   /// Clients are responseible to dispatch to appropriate threads, if needed.
-  func retrieve(completion: @escaping RetrievalCompletion)
+  func deletecachedFeed(completion: @escaping DeletionCompletion)
 }
