@@ -244,6 +244,8 @@
 		399B080D2632EC9100A98A83 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				399B082A26365CC400A98A83 /* CoreDataFeedStore.swift */,
+				399B08422636636D00A98A83 /* FeedStore.xcdatamodeld */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -257,8 +259,6 @@
 				392CDA0225EFDACB00917E47 /* LocalFeedImage.swift */,
 				3916A908261E9D0100613B4A /* FeedCachePolicy.swift */,
 				39E67714262EEE81000C5ECF /* CodableFeedStore.swift */,
-				399B082A26365CC400A98A83 /* CoreDataFeedStore.swift */,
-				399B08422636636D00A98A83 /* FeedStore.xcdatamodeld */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";
