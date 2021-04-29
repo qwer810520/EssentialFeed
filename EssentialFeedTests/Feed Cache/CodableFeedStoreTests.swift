@@ -9,6 +9,7 @@
 import XCTest
 @testable import EssentialFeed
 
+/*
 class CodableFeedStoreTests: XCTestCase, FailableFeedStore {
 
   override func setUp() {
@@ -169,5 +170,5 @@ class CodableFeedStoreTests: XCTestCase, FailableFeedStore {
   private func deleteStoreArtifacts() {
     try? FileManager.default.removeItem(at: testSpecificStoreURL())
   }
-
 }
+ */
