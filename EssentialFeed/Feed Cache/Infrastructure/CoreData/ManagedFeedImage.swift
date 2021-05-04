@@ -18,7 +18,7 @@ import CoreData
 //  @NSManaged var cache: ManagedCache
 //}
 
-internal extension ManagedFeedImage {
+ extension ManagedFeedImage {
 
   static func images(from localFeed: [LocalFeedImage], in context: NSManagedObjectContext) -> NSOrderedSet {
     return NSOrderedSet(array: localFeed.map{ local in
