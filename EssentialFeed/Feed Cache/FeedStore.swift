@@ -11,8 +11,11 @@ import Foundation
 public typealias CachedFeed = (feed: [LocalFeedImage], timestamp: Date)
 
 public protocol FeedStore {
-  typealias DeletionCompletion = (Error?) -> Void
-  typealias InsertionCompletion = (Error?) -> Void
+  typealias DeletionError = Error?
+  typealias DeletionCompletion = (DeletionError) -> Void
+
+  typealias InsertionResult = Error?
+  typealias InsertionCompletion = (InsertionResult) -> Void
 
   typealias RetrieveResult = Swift.Result<CachedFeed?, Error>
   typealias RetrievalCompletion = (RetrieveResult) -> Void
