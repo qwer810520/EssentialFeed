@@ -6,7 +6,7 @@
 //  Copyright © 2020 Min. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 public final class RemoteFeedLoader: FeedLoader {
   private let url: URL
