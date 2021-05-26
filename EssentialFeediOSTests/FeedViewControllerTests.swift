@@ -322,7 +322,6 @@ class FeedViewControllerTests: XCTestCase {
       imageRequests.append((url, completion))
       return TaskSpy { [weak self] in
         self?.cancelledImageURLs.append(url)
-
       }
     }
 
